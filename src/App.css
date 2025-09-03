@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.cocktail-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.cocktail-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.cocktail-card:hover {
+  transform: scale(1.05);
+}
+
+.cocktail-card img {
+  width: 100%;
+  height: auto;
+}
+
+.cocktail-card h3 {
+  padding: 10px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.search-input {
+  width: 50%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #888;
+}
