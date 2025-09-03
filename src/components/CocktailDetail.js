@@ -24,7 +24,7 @@ function CocktailDetail({cocktail, onClose}) {
     return (
         <div className ="cocktail-detail">
             <button onClick={onClose} className="close-button">
-                ← Volver a la búsqueda
+                ← Back to search
             </button>
 
             <h2>{cocktail.strDrink}</h2>
@@ -38,7 +38,7 @@ function CocktailDetail({cocktail, onClose}) {
                     ))}
                 </ul>
 
-                <h3>Instrucciones: </h3>
+                <h3>Instructions: </h3>
                 <p>{cocktail.strInstructions}</p>
             </div>
         </div>

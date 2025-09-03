@@ -34,7 +34,7 @@ function App() {
         // La API devuelve { drinks: [...]} o {drinks: null} si no encuentra nada
         setCocktails(data.drinks || []);
       } catch (error) {
-        console.error("Error fetchinv data:", error);
+        console.error("Error fetching data:", error);
         setCocktails([]); // En caso de error, vaciamos los resultados
       }
     };
