@@ -1,3 +1,5 @@
+// Es el cerebro de la aplicación, controla el estado (qué está buscando, cuáles son los resultados) y se lo pasará a otros componentes
+
 import logo from './logo.svg';
 import './App.css';
 
