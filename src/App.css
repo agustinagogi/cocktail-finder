@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,4 +82,36 @@
   margin-top: 40px;
   font-size: 1.2rem;
   color: #888;
+}
+
+.cocktail-detail {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cocktail-detail img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.details-content {
+  text-align: left;
+}
+
+.details-content ul {
+  list-style-type: '🍹 ';
+  padding-left: 20px;
+}
+
+.close-button {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
