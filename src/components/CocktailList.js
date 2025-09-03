@@ -5,7 +5,7 @@ function CocktailList({cocktails, onSelectCocktail}){
     // Si no hay cócteles, mostramos un mensaje
 
     if (cocktails.length === 0){
-        return <p className="no-results">We couldn't find any cocktail. Please search another one!</p>
+        return <p className="no-results">We couldn't find any cocktails. Please search another one!</p>
     }
 
     return (
