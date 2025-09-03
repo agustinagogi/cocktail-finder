@@ -1,24 +1,26 @@
 // Es el cerebro de la aplicación, controla el estado (qué está buscando, cuáles son los resultados) y se lo pasará a otros componentes
-import React, { useState, useEffect } from 'react';
-import SearchBar from './components/SearchBar';
-import CocktailList from './components/CocktailList';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import SearchBar from "./components/SearchBar";
+import CocktailList from "./components/CocktailList";
+import CocktailDetail from "./components/CocktailDetail";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-
   // Estado para guardar el término de búsqueda
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   // Estado para guardar los cócteles encontrados (será un array vacío por ahora)
   const [cocktails, setCocktails] = useState([]);
+
+  const [selectedCocktail, setSelectedCocktail] = useState(null);
 
   // Hook que se ejecutará cuando cambien sus dependencias
   useEffect(() => {
     // Definimos una función asíncrona para usar await
     const fetchCocktails = async () => {
       // Solo buscamos si hay algo escrito para no llamar a la API si no se necesita
-      if (searchTerm.trim() === '') {
+      if (searchTerm.trim() === "") {
         setCocktails([]); // Si está vacío, limpiamos los resultados
         return;
       }
@@ -33,12 +35,15 @@ function App() {
         setCocktails(data.drinks || []);
       } catch (error) {
         console.error("Error fetchinv data:", error);
-        setCocktails([]); // En caso de error, vaciamos los resultados 
+        setCocktails([]); // En caso de error, vaciamos los resultados
       }
     };
-
     fetchCocktails();
   }, [searchTerm]);
+
+  const handleSelectCocktail = (cocktail) => {
+    setSelectedCocktail(cocktail);
+  };
 
   // Aquí haremos la lógica para llamar a la API más adelante
   return (
@@ -47,12 +52,24 @@ function App() {
         <h1>CocktailFinder</h1>
       </header>
       <main>
-        {/* Pasamos el estado y la función como props para actualizarlo al SearchBar 
+        {selectedCocktail ? (
+          <CocktailDetail
+            cocktail={selectedCocktail}
+            onClose={() => setSelectedCocktail(null)}
+          />
+        ) : (
+          <>
+            {/* Pasamos el estado y la función como props para actualizarlo al SearchBar 
         Le damos el nombre searchTerm a la prop y le pasamos el valor*/}
-        <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-        {/*Pasamos la lista de cócteles al componente Cocktaillist */}
-        <CocktailList cocktails={cocktails} />
+            {/*Pasamos la lista de cócteles al componente Cocktaillist */}
+            <CocktailList
+              cocktails={cocktails}
+              onSelectCocktail={handleSelectCocktail}
+            />
+          </>
+        )}
       </main>
     </div>
   );
