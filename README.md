@@ -4,7 +4,7 @@ A sleek and simple web application built with React to explore the world of cock
 Try it here: https://cocktail-finder-plum.vercel.app
 
 ## Interactive Demonstration
-
+![Demonstration app cocktail finder](/demostracion-cocktail-finder.gif)
 
 ## Project Philosophy and Technical Approach
 The goal was to build a robust, scalable application with an excellent user experience. I focused on three key pillars:
