@@ -2,7 +2,7 @@
 ¡Una aplicación web elegante y sencilla construida con React para explorar el mundo de los cócteles! Busca tus bebidas favoritas, obtén los ingredientes y aprende a prepararlas. Este proyecto fue creado para demostrar habilidades fundamentales en el desarrollo front-end con React.
 
 ## Demostración Interactiva
-[Añade aquí un GIF animado que muestre la aplicación en acción. Un GIF es mucho más impactante que una imagen estática.]
+![Demostración app cocktail finder](/demostracion-cocktail-finder.gif)
 
 ## Filosofía del Proyecto y Enfoque Técnico
 El objetivo era construir una aplicación robusta, escalable y con una excelente experiencia de usuario. Me enfoqué en tres pilares clave:
