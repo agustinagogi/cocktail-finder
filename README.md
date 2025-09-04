@@ -9,11 +9,11 @@
 ## Filosofía del Proyecto y Enfoque Técnico
 El objetivo era construir una aplicación robusta, escalable y con una excelente experiencia de usuario. Me enfoqué en tres pilares clave:
 
-- Experiencia de Usuario (UX) Primero: Desde el diseño mobile-first hasta el renderizado condicional que maneja los estados de carga y error, cada decisión fue tomada pensando en ofrecer una navegación fluida e intuitiva.
+- **Experiencia de Usuario (UX) Primero:** Desde el diseño mobile-first hasta el renderizado condicional que maneja los estados de carga y error, cada decisión fue tomada pensando en ofrecer una navegación fluida e intuitiva.
 
-- Código Limpio y Escalable: Utilicé una arquitectura basada en componentes funcionales y Hooks de React para mantener el código modular, reutilizable y fácil de mantener. El estado se gestiona de forma centralizada donde es necesario, siguiendo las mejores prácticas.
+- **Código Limpio y Escalable:** Utilicé una arquitectura basada en componentes funcionales y Hooks de React para mantener el código modular, reutilizable y fácil de mantener. El estado se gestiona de forma centralizada donde es necesario, siguiendo las mejores prácticas.
 
-- Flujo de Trabajo Moderno (DevOps): El proyecto está integrado con un flujo de CI/CD (Integración y Despliegue Continuo) a través de Vercel. Cada push a la rama main despliega automáticamente una nueva versión, asegurando agilidad y fiabilidad.
+- **Flujo de Trabajo Moderno (DevOps):** El proyecto está integrado con un flujo de CI/CD (Integración y Despliegue Continuo) a través de Vercel. Cada push a la rama main despliega automáticamente una nueva versión, asegurando agilidad y fiabilidad.
 
 ## Stack Tecnológico y Arquitectura
 Para construir este proyecto, seleccioné un conjunto de herramientas modernas y eficientes:
