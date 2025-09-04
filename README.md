@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# 🍹 CocktailFinder - Aplicación React Avanzada
+¡Una aplicación web elegante y sencilla construida con React para explorar el mundo de los cócteles! Busca tus bebidas favoritas, obtén los ingredientes y aprende a prepararlas. Este proyecto fue creado para demostrar habilidades fundamentales en el desarrollo front-end con React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demostración Interactiva
+[Añade aquí un GIF animado que muestre la aplicación en acción. Un GIF es mucho más impactante que una imagen estática.]
 
-## Available Scripts
+## Filosofía del Proyecto y Enfoque Técnico
+El objetivo era construir una aplicación robusta, escalable y con una excelente experiencia de usuario. Me enfoqué en tres pilares clave:
 
-In the project directory, you can run:
+- Experiencia de Usuario (UX) Primero: Desde el diseño mobile-first hasta el renderizado condicional que maneja los estados de carga y error, cada decisión fue tomada pensando en ofrecer una navegación fluida e intuitiva.
 
-### `npm start`
+- Código Limpio y Escalable: Utilicé una arquitectura basada en componentes funcionales y Hooks de React para mantener el código modular, reutilizable y fácil de mantener. El estado se gestiona de forma centralizada donde es necesario, siguiendo las mejores prácticas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Flujo de Trabajo Moderno (DevOps): El proyecto está integrado con un flujo de CI/CD (Integración y Despliegue Continuo) a través de Vercel. Cada push a la rama main despliega automáticamente una nueva versión, asegurando agilidad y fiabilidad.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stack Tecnológico y Arquitectura
+Para construir este proyecto, seleccioné un conjunto de herramientas modernas y eficientes:
 
-### `npm test`
+- **Framework Principal:** React (Hooks)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **useState:** Para una gestión de estado local, declarativa y predecible.
 
-### `npm run build`
+- **useEffect:** Para manejar efectos secundarios como las llamadas a la API, controlando el ciclo de vida del componente y optimizando las peticiones.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Manejo de Asincronía:** JavaScript (ES6+) async/await para consumir la API de TheCocktailDB de una manera limpia y legible, incluyendo un manejo de errores robusto con bloques try...catch.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Diseño y Estilado:** CSS Moderno
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Implementación de un diseño responsive utilizando **Flexbox y CSS Grid**.
 
-### `npm run eject`
+- **Enfoque Mobile-First**, garantizando una experiencia óptima en cualquier dispositivo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Despliegue y Hosting:** Vercel
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Configuración de un pipeline de CI/CD para despliegues automáticos desde GitHub.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Hosting global de alto rendimiento para una carga rápida de la aplicación.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Desafíos y Soluciones
+Durante el desarrollo, uno de los desafíos interesantes fue normalizar los datos de la API. Los ingredientes y sus medidas venían en hasta 15 propiedades separadas (strIngredient1, strMeasure1, etc.).
 
-## Learn More
+**Solución:** Creé una función de utilidad dentro del componente CocktailDetail que itera dinámicamente sobre estas propiedades, las une y las transforma en un único array de [medida, ingrediente], que es mucho más fácil de renderizar. Esto demuestra mi capacidad para manipular datos complejos y presentarlos de forma limpia.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Posibles Mejoras Futuras
+Este proyecto tiene una base sólida, pero siempre pienso en cómo llevarlo al siguiente nivel. Los siguientes pasos podrían incluir:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ **Pruebas Unitarias:** Implementar Jest y React Testing Library para asegurar la fiabilidad de los componentes.
 
-### Code Splitting
+💡 **Gestión de Estado Avanzada:** Integrar Context API o Redux Toolkit para manejar estados globales más complejos si la aplicación creciera (ej. favoritos, temas).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+⚡ **Optimización de Rendimiento:** Implementar React.memo en componentes y virtualización de listas para búsquedas con cientos de resultados.
 
-### Analyzing the Bundle Size
+## Hablemos
+Estoy buscando activamente oportunidades donde pueda aportar mi pasión por el desarrollo front-end y seguir creciendo profesionalmente. Si mi trabajo te ha parecido interesante y crees que podría encajar en tu equipo, me encantaría conectar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+agustinatgg@gmail.com
 
-### Making a Progressive Web App
+📧 Email: [tu.email@ejemplo.com]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+💼 LinkedIn: [Enlace a tu perfil de LinkedIn]
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Gracias por tu tiempo y por revisar mi proyecto.
