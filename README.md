@@ -1,6 +1,8 @@
 # 🍹 CocktailFinder - Aplicación React Avanzada
 ¡Una aplicación web elegante y sencilla construida con React para explorar el mundo de los cócteles! Busca tus bebidas favoritas, obtén los ingredientes y aprende a prepararlas. Este proyecto fue creado para demostrar habilidades fundamentales en el desarrollo front-end con React.
 
+Demostración: https://cocktail-finder-plum.vercel.app
+
 ## Demostración Interactiva
 ![Demostración app cocktail finder](/demostracion-cocktail-finder.gif)
 
@@ -53,10 +55,6 @@ Este proyecto tiene una base sólida, pero siempre pienso en cómo llevarlo al s
 ## Hablemos
 Estoy buscando activamente oportunidades donde pueda aportar mi pasión por el desarrollo front-end y seguir creciendo profesionalmente. Si mi trabajo te ha parecido interesante y crees que podría encajar en tu equipo, me encantaría conectar.
 
-agustinatgg@gmail.com
-
-📧 Email: [tu.email@ejemplo.com]
-
-💼 LinkedIn: [Enlace a tu perfil de LinkedIn]
+📧 Email: agustinatgg@gmail.com
 
 Gracias por tu tiempo y por revisar mi proyecto.
