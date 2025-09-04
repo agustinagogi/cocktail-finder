@@ -1,4 +1,4 @@
-# 🍹 CocktailFinder - React Avanzada
+# 🍹 CocktailFinder - Aplicación React
 ¡Una aplicación web elegante y sencilla construida con React para explorar el mundo de los cócteles! Busca tus bebidas favoritas, obtén los ingredientes y aprende a prepararlas. Este proyecto fue creado para demostrar habilidades fundamentales en el desarrollo front-end con React.
 
 **Pruebala aquí:** https://cocktail-finder-plum.vercel.app
